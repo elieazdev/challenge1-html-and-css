@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'latto',sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* NAVIGATION                                                         */
+/* ------------------------------------------------------------------ */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 15%;
+    align-items: center;
+}
+
+
+/* logo  */
+.nav .logo{
+    width: 40px;
+    height: 40px;
+}
+.nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* list Nav */
+.list_nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* button  */
+.btn{
+    padding: 0.5rem 3rem;
+    display: inline-block;
+    border: 1px solid  orangered;
+    border-radius: 5px;
+} 
+.btn a{
+    color:  orangered;
+}
+.btn i{
+    color: orangered;
+}
+
+/* ------------------------------------------------------------------ */
+/* HOME PAGE SECTION                                                  */
+/* ------------------------------------------------------------------ */
+
+.home_section{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.685),rgb(255, 255, 255)),url(./images/back.jpg);
+}
+
+/* bloc text  */
+.home_section .bloc-text h1{
+    font-size: 4rem;
+    font-weight: 900;
+    padding-top: 2rem;
+}
+.home_section .bloc-text p{
+    padding: 1rem 0;
+    opacity: 0.7;
+    font-size: 1.2rem;
+    
+}
+
+.bloc_btn{
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 0;
+
+
+}
+.bloc_btn .btn{
+    background: orangered;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+}
+.bloc_btn .btn a{
+    color: #fff;
+}
+.bloc_btn .btn:nth-child(2){
+    background: white;
+    border: none;
+   
+}
+.bloc_btn .btn:nth-child(2) a{
+    color: orangered;
+}
+
+.home_section h3{
+    padding: 2rem 0;
+    opacity: 0.7;
+    font-size: 0.9rem;
+
+}
+
+
+/* logo partener  */
+.home_section .logo_parten_section{
+    display: flex;
+    gap: 3rem;
+    padding:1rem 0 ;
+}
+.logo_parten_section .logo{
+  
+ 
+}
+.logo_parten_section .logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 7px solid #b3b0b0;
+    background: #8b6d6d;
+    display: inline-block;
+}
+
+/* ------------------------------------------------------------------ */
+/* SERVICE PAGE SECTION                                                  */
+/* ------------------------------------------------------------------ */
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #292424;
+    background: #eeeeee;
+    padding: 2rem 15%;
+
+}
+.service .modal-container{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    min-width: 60%;
+    background: #fff;
+}
+.service .modal-container .box-left{
+    /* background: #a0bfa8; */
+    padding: 0.5rem;
+    width: 50%;
+}
+select{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+.service .modal-container .box-left .box1{
+    /* background: #fff; */
+    margin-top: 1rem;
+    border: 2px solid rgba(255, 68, 0, 0.862);
+    min-height: 25vh;
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.textBox{
+    background: #dcdcdc;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.service .box-right{
+    display: block;
+    width: 50%;
+
+}
+.service .box-right .textBox{
+    margin-top: 1rem;
+}
+.service .box-right .list_form{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* ABOUT PAGE SECTION                                                  */
+/* ------------------------------------------------------------------ */
+
+.about{
+    padding: 5rem 15%;
+    background: #e0e0e0;
+
+
+}
+.box-title{
+    width: 50%;
+    /* background: #a1a0a0; */
+    padding: 0.5rem;
+}
+ .box-title h4{
+    border-left: 3px solid orangered;
+    padding-left: 1rem;
+    
+}
+ .box-title h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+ .box-title p{
+    margin-top: 1.5rem;
+    font-weight: 300;
+}
+
+ .box-main{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 2rem;
+
+
+}
+
+ .box-main .item {
+    background: #fff;
+    border: 2px solid salmon;
+    padding: 1rem;
+    border-radius: 5px;
+}
+ .box-main .icon{
+    background: #d1acac;
+    display: inline-block;
+    padding: 1.3rem;
+    border-radius: 5px;
+
+}
+ .box-main .item h4{
+    margin: 0.5rem 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* SKILLS PAGE SECTION                                                */
+/* ------------------------------------------------------------------ */
+
+.skills{
+    padding: 5rem 15%;
+    background: #e0e0e0;
+}
+.skills  .box-main{
+    gap: 0;
+}
+.skills  .box-main .item{
+    border: 2px solid #c3c1c1a8;
+    border-radius: 0;
+
+}
+.skills  .box-main .item:nth-of-type(2){
+    background: #c3c1c1;
+}
+.skills  .box-main .item:nth-of-type(4){
+    background: #c3c1c1;
+}
+.skills  .box-main .item:nth-of-type(6){
+    background: #c3c1c1;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* CONTACT PAGE SECTION                                                */
+/* ------------------------------------------------------------------ */
+.contact-us{
+    background: #e0e0e0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 5rem 15%;
+
+}
+
+/* left side  */
+.contact-us .bloc-left{
+}
+.contact-us .bloc-left h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.contact-us .bloc-left h2 span{
+    color: orangered;
+}
+
+.contact-us .bloc-left .box-bloc{
+    /* background: #755f5f; */
+    background: #fff;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.contact-us .bloc-left .box-bloc .head{
+    display: flex;
+    /* background: #534242; */
+    gap: 0.5rem;
+}
+.contact-us .bloc-left .box-bloc .head .avatar{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #935656;
+    
+
+}
+.contact-us .bloc-left .box-bloc .head .title{
+    padding: 0.5rem;
+}
+
+/* right side */
+.bloc-right{
+
+}
+.bloc-right .formulaire input,textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding:  0.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+.bloc-right .formulaire div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.bloc-right .check{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.bloc-right .btn{
+    display: block;
+    border: none;
+    background: orangered;
+
+    
+}
+.bloc-right .btn a{
+    color: #fff;
+    
+}
