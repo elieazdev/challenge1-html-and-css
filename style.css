@@ -19,11 +19,13 @@
 
 
 /* logo  */
-.nav .logo{
+.nav .list_nav .logo{
     width: 40px;
     height: 40px;
+   
+
 }
-.nav .logo img{
+.nav .list_nav .logo img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -280,7 +282,7 @@ select{
 
 
 /* ------------------------------------------------------------------ */
-/* CONTACT PAGE SECTION                                                */
+/* CONTACT PAGE SECTION                                               */
 /* ------------------------------------------------------------------ */
 .contact-us{
     background: #e0e0e0;
@@ -363,4 +365,96 @@ select{
 .bloc-right .btn a{
     color: #fff;
     
+}
+
+
+/* ------------------------------------------------------------------ */
+/* CONTACT PAGE SECTION                                               */
+/* ------------------------------------------------------------------ */
+.footer{
+    background: #e0e0e0;
+
+    display: flex;
+    padding: 5rem 15%;
+    gap: 5rem;
+}
+
+/* bloc left  */
+.footer .bloc-left{
+    flex: 1;  
+    padding: 1rem;
+}
+
+/* bloc left logo  */
+.footer .bloc-left .logo{
+    width: 40px;
+    height: 40px;
+
+}
+.footer .bloc-left .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.bloc-left .title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.bloc-left .details{
+    margin-top: 1rem;
+}
+.bloc-left .details p{
+    margin: 1rem 0;
+}
+.bloc-left .details .input-container{
+    background: #f7f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+.bloc-left .details input{
+    border: none;
+    outline: none;
+    /* padding: 0.2rem; */
+    background: none;
+    padding-left: 1rem;
+}
+.bloc-left .details .btn{
+    background: orangered;
+    color: #f7f4f4;
+}
+
+/* bloc right */
+.footer .bloc-right{
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer .bloc-right .item{
+
+}
+.footer .bloc-right .item p{
+    margin: 1rem 0 ;
+}
+
+
+footer{
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+footer h4{
+    font-weight: 100;
 }
